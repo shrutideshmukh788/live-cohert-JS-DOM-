@@ -1,0 +1,134 @@
+// console.log('Hello guys')
+
+// console.warn("This is warning")
+// console.error("This is errror")
+// var a;
+// a = 10;
+// var a = 10;
+// var b = 20;
+// console.log(a)
+// console.log(b)
+// console.log(a,b);
+// var a = 'True';
+// console.log(a)
+// var dulha = 'harsh Bhaiya'
+// var dulha2 =  'Sarthak'
+// console.log(dulha,dulha2)
+// var a = 10;
+// var b= 3;
+// var c = a%b;
+// console.log(c);
+// console.log(a/b) 
+// var room ='Salmon'
+// var bride ='kat';
+// console.log(room,'weds',bride)
+
+// // alert('Are you sure')
+// // confirm('Are you 18+')
+// // prompt('Enter your name')
+
+// var username = prompt('Enter your name')
+// var username = prompt('Age')
+// console.log(user);
+// //name is not used
+// var x = 5; 
+// c// yes change
+// const d = 10
+// console.log(d)
+// let a = 10 // local variable
+// var a= 10
+// ES6
+// var a ='Sarthak Sharma is here'
+// var  a = 10
+// var g = 'bbb';
+var a = 'Shruti';
+var b = 'Deshmukh';
+console.log(a+b)
+
+// var a = '10'
+// var  b ='20'
+// console.log(a+b)
+// var num1 =prompt('enter a no')
+// var num2 = Number(num1)
+// console.log(num1)
+
+
+if(10>5){
+    console.log('true')
+}
+else{
+    console.log('World')
+}
+var c = 33;
+var d= 33;
+if(c==d){
+    console.log('Equal')
+}
+else{
+    console.log('Not Equal')
+}
+
+// var age = Number(prompt('Enter a age'))
+// if(age >= 18){
+
+//     console.log('You can vote')
+// }
+// else if(age == 18){
+//     console.log('Equal to')
+// }
+// else{
+//    console.log('Not equal')
+// }
+
+// true = 1
+// false = 0
+// // && (*) false
+// // || (+) true
+
+var age = 10
+if(age >18 && age<12){
+
+    console.log('You can vote')
+}
+else{
+    console.log('Equal to')
+}
+
+var unit = Number(prompt("Enter a number"))
+console.log(unit)
+var bill
+if(unit >= 100){
+     bill = unit*10
+}
+else if(unit>50){
+     bill = unit*5
+}
+else{
+    bill = unit*5
+}
+console.log(bill);
+
+var a = 0
+while(a<=10){
+   console.log(a)
+   a++
+}
+
+for(var a=0; a>10; a--){
+    console.log(a)
+}
+
+
+function abcd(){
+    return function(){
+        console.log("hello");
+    };
+}
+abcd()();
+
+function abcd(val){
+    val();
+}
+abcd(function(){
+   console.log("hey");
+})

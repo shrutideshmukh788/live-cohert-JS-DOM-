@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@400..800&display=swap");
+
+/* CSS Variables */
+:root {
+    /* Theme Fonts */
+    --font-family-1: "Roboto Mono", monospace;
+    --font-family-2: "Syne", sans-serif;
+    --font-family-3: "Inter", sans-serif;
+    --font-family-4: Georgia, 'Times New Roman', Times, serif;
+    --font-family-5: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* Default Light Theme */
+    --primary-color: #191919;
+    --primary-border-color: rgba(0, 0, 0, 0.404);
+
+    /* Theme Variables */
+    --theme-bg: var(--primary-bg);
+    --theme-color: var(--primary-color);
+    --theme-border-color: var(--primary-border-color);
+}
+
+/* Dark Mode */
+.dark-mode {
+    --primary-bg: #191919;
+    --primary-color: #fdfbf5;
+    --primary-border-color: rgb(255, 255,255, 0.9);
+}
+
+/* Light Font Mixin */
+@mixin light-weight-font {
+    font-weight: 200;
+    opacity: 0.9;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-family-3);
+    background-color: var(--theme-bg);
+    color: var(--theme-color);
+}
+
+body {
+    padding: 1rem;
+}
+
+main {
+    padding: 1.5rem;
+    padding-top: 3rem;
+    width: 100%;
+    border: 1px solid var(--theme-border-color);
+}
+
+/* View 1 */
+.view-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    p {
+        @include light-weight-font;
+    }
+
+    h1 {
+        font-weight: 300;
+        font-size: 6rem;
+        width: 100%;
+        font-family: var(--font-family-4);
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+}
+
+/* View 2 */
+.view-2 {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+            @include light-weight-font;
+            color: var(--theme-color);
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 3rem;
+            width: 90%;
+            font-family: var(--font-family-5);
+            
+        }
+
+        button {
+            padding: 1rem;
+            border: none;
+            width: fit-content;
+            border-radius: 0.5em;
+            background-color: black;
+            color: rgb(255, 248, 214);
+            cursor: pointer;
+        }
+    }
+
+    .line {
+        background-color: var(--theme-color);
+        height: 1px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .elem {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            svg {
+                width: 4rem;
+                aspect-ratio: 1 / 1;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+
+            p {
+                @include light-weight-font;
+                color: #111 !important; 
+            }
+        }
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 1020px) {
+    main {
+        padding: 3rem;
+    }
+
+    .view-1 {
+        h1 {
+            font-size: 8rem;
+            width: 100%;
+        }
+    }
+
+    .view-2 {
+        flex-direction: row;
+
+        .top {
+            width: 60%;
+            justify-content: space-between;
+
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        .line {
+            height: initial;
+            width: 1px;
+        }
+
+        .bottom {
+            width: 40%;
+
+            .line {
+                height: 1px;
+                width: 100%;
+                align-self: stretch;
+            }
+        }
+    }
+}
