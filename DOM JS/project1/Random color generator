@@ -1,0 +1,41 @@
+# 🎨 Random Color Generator
+
+## 🚀 Project Overview
+This is a simple **Random Color Generator** built using **JavaScript, HTML, and CSS**. The project dynamically changes background colors whenever a button is clicked, making it a fun and interactive way to explore JavaScript's **DOM Manipulation** and **Event Handling**.
+
+## 🛠 Tech Stack
+- **JavaScript** (DOM, Events, Arrays)
+- **HTML**
+- **CSS**
+
+## 📌 Features
+✅ Generates random colors on button click.
+✅ Displays the color code for reference.
+✅ Enhances JavaScript skills in DOM & event-driven programming.
+✅ Uses Math.random() for efficient color selection.
+
+## 📸 Preview
+(Attach a screenshot or GIF of your project here if possible)
+
+## 🏗 How to Run
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/shrutideshmukh788/live-cohert-JS-DOM-.git
+   ```
+2. Open the **index.html** file in a browser.
+3. Click the button to generate random colors!
+
+## 🌟 Learning Outcomes
+- Improved JavaScript skills in **DOM Manipulation & Event Listeners**.
+- Gained hands-on experience with **randomization** in web applications.
+- Applied **Template Literals** for better code readability.
+
+## 🙌 Acknowledgments
+A huge thanks to **Sarthak Sharma & Sheriyans Coding School** for their guidance and support!
+
+## 📬 Feedback
+I would love to hear your feedback! Feel free to connect and share your thoughts. 🚀
+
+## 📢 Connect with Me
+[LinkedIn](https://www.linkedin.com/in/shruti-deshmukh-23203a248/) | [GitHub](https://github.com/shrutideshmukh788/)
+
